@@ -31,10 +31,10 @@ graphql-apollo-hooks-starter
 npm install apollo-boost react-apollo graphql react-apollo-hooks --save
 ```
 
-- `apollo-boost`: Package containing everything you need to set up Apollo Client
-- `react-apollo`: View layer integration for React
-- `graphql`: Also parses your GraphQL queries
-- `react-apollo-hooks`: Use Apollo Client as React hooks
+- `apollo-boost`: 是一种零配置开始使用 Apollo Client 的方式
+- `react-apollo`: 是 Apollo 数据栈在 React 呈现的基础架包
+- `graphql`: 解析您的 GraphQL 查询
+- `react-apollo-hooks`: 使用 Apollo Client 作为 React Hooks
 
 ## 设定 Apollo client
 
@@ -53,6 +53,8 @@ const client = new ApolloClient({
 >
 > ![image-20190219111607627](./images/image-20190219111607627.png)
 
+- `ApolloClient` 作为查询结果数据的中心存储，缓存并分发查询结果。
+
 ## 将您的客户端连接到 React
 
 ```
@@ -69,6 +71,8 @@ const App = () => (
 ```
 
 > ApolloProvider 默认情况下，Apollo 客户端会创建自己的内部 Redux store 来管理查询及其结果。
+
+- `ApolloProvider` 使该客户端实例可用于多层的 React 组件中。
 
 到这里我们先来个未使用 hooks，在调整到 hooks。
 
@@ -135,6 +139,9 @@ const Users = () => (
 export default Users;
 
 ```
+
+- `gql` 模板标签是你在 Apollo 客户端应用中定义 GraphQL 查询的方法。[更多信息](https://www.apollographql.com/docs/resources/graphql-glossary.html#gql-function)
+- `Query` 组件是是 Apollo 中最重要的一个组成部分。Qurey 组件中的 variables 是为了向 query 中传递参数。[更多信息](https://www.apollographql.com/docs/react/essentials/queries.html)
 
 查看结果
 

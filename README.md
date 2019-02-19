@@ -47,7 +47,7 @@ const client = new ApolloClient({
 
 > 为了能正确的启动客户端需要提前创建 GraphQL Server，在未设置 uri 的情况下客户端默认链接的是同该项目 Host 地址`/graphql`端点。
 >
-> 为了方便我这边在 codesandbox 创建了一个[Apollo Server demo](https://codesandbox.io/s/qk9qvkw6nw)方便测试（https://qk9qvkw6nw.sse.codesandbox.io/）。可以通过浏览器直接访问并测试结果：
+> 为了方便我这边在 codesandbox 创建了一个[Apollo Server demo](https://codesandbox.io/s/qk9qvkw6nw)方便测试（[](https://qk9qvkw6nw.sse.codesandbox.io/)）。可以通过浏览器直接访问并测试结果：
 >
 > ![image-20190219111607627](./images/image-20190219111607627.png)
 

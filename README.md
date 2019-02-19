@@ -1,4 +1,4 @@
-# apollo hooks 一个简单的脚手架
+# apollo hooks 开发一个脚手架
 
 ​ 不久前，react 在 v16.7.0-alpha 版本中推出了新的 hooks 函数，其作用就是让你可以在 class 以外使用 state 和其他 react 特性。大家都知道，class 的写法有的时候很繁琐，比如其中的 this 问题等等。
 
